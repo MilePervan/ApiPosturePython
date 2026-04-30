@@ -1,0 +1,36 @@
+# ApiPosture Configuration
+# This is a sample configuration file
+
+rules:
+  # List specific rules to enable (empty = all rules enabled)
+  enabled: []
+
+  # List rules to disable
+  disabled: []
+
+# File patterns to include (default shown)
+include:
+  - "**/*.py"
+
+# File patterns to exclude (default shown)
+exclude:
+  - "**/__pycache__/**"
+  - "**/venv/**"
+  - "**/.venv/**"
+  - "**/site-packages/**"
+  - "**/node_modules/**"
+  - "**/.git/**"
+  - "**/test_*.py"
+  - "**/*_test.py"
+  - "**/tests/**"
+  - "**/conftest.py"
+
+# Suppression rules for specific findings
+suppressions:
+  # Example: Suppress AP001 for health check endpoint
+  # - rule: AP001
+  #   route: "/health"
+  #   reason: "Health check is intentionally public"
+
+# Minimum severity to report: info, low, medium, high, critical
+min_severity: info

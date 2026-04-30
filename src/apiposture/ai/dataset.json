@@ -1,0 +1,326 @@
+[
+  {
+    "route": "/api/catalog-types",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-types",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-items",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-items",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-items/{catalogItemId}",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-items/{catalogItemId}",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-brands",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/api/catalog-brands",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/public",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/public",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/lab",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/lab",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/login.php",
+    "method": "POST",
+    "alarm": "AP002",
+    "features": {
+      "method": "POST",
+      "category": "AUTH",
+      "changes_state": true,
+      "alarm": "AP002"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/check_token_high.php",
+    "method": "POST",
+    "alarm": "AP002",
+    "features": {
+      "method": "POST",
+      "category": "AUTH",
+      "changes_state": false,
+      "alarm": "AP002"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/check_token_impossible.php",
+    "method": "POST",
+    "alarm": "AP002",
+    "features": {
+      "method": "POST",
+      "category": "AUTH",
+      "changes_state": false,
+      "alarm": "AP002"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/vulnerabilities/api/v2/login/login",
+    "method": "POST",
+    "alarm": "AP002",
+    "features": {
+      "method": "POST",
+      "category": "AUTH",
+      "changes_state": true,
+      "alarm": "AP002"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP004",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/products/search",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "SEARCH",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/products/search",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "SEARCH",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/languages",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/languages",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/captcha",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "SECURITY",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/rest/captcha",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "SECURITY",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE"
+  }
+]
