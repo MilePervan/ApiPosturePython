@@ -1,18 +1,11 @@
-# ApiPosture Configuration
-# This is a sample configuration file
 
 rules:
-  # List specific rules to enable (empty = all rules enabled)
-  enabled: []
+  enabled: []          
+  disabled: []         
 
-  # List rules to disable
-  disabled: []
-
-# File patterns to include (default shown)
 include:
   - "**/*.py"
 
-# File patterns to exclude (default shown)
 exclude:
   - "**/__pycache__/**"
   - "**/venv/**"
@@ -25,12 +18,19 @@ exclude:
   - "**/tests/**"
   - "**/conftest.py"
 
-# Suppression rules for specific findings
 suppressions:
-  # Example: Suppress AP001 for health check endpoint
-  # - rule: AP001
-  #   route: "/health"
-  #   reason: "Health check is intentionally public"
-
-# Minimum severity to report: info, low, medium, high, critical
+  
 min_severity: info
+
+ai_filter:
+ 
+  preset: rules_review
+
+ 
+  use_llm: true                  
+  llm_model: qwen2.5-coder:7b     
+  use_rules: true                
+  min_rule_support: 2            
+  auto_suppress_threshold: 70    
+  code_context_lines: 10         
+  protect_critical: true         

@@ -1,5 +1,4 @@
-"""Project analyzer that orchestrates the scanning process."""
-
+import yaml
 from datetime import datetime
 from pathlib import Path
 
@@ -14,6 +13,8 @@ from apiposture.core.models.scan_result import ScanResult
 from apiposture.rules.engine import RuleEngine
 
 from apiposture.ai.filter import process_findings
+from apiposture.ai.config import AIFilterConfig
+
 
 def deduplicate_endpoints(endpoints: list) -> list:
     seen = {}
@@ -26,8 +27,25 @@ def deduplicate_endpoints(endpoints: list) -> list:
     return result
 
 
+def _load_ai_filter_section(scan_path: Path) -> dict | None:
+
+    base = scan_path if scan_path.is_dir() else scan_path.parent
+    candidates = [
+        base / ".apiposture.yaml",
+        base / "apiposture.yaml",
+        Path.cwd() / ".apiposture.yaml",
+    ]
+    for cfg_path in candidates:
+        if cfg_path.exists():
+            try:
+                data = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
+                return (data or {}).get("ai_filter")
+            except Exception:
+                return None
+    return None
+
+
 class ProjectAnalyzer:
-    """Orchestrates the scanning process for a project."""
 
     def __init__(self, config: ApiPostureConfig | None = None) -> None:
         self.config = config or ApiPostureConfig()
@@ -53,7 +71,6 @@ class ProjectAnalyzer:
         for file_path in files:
             self._scan_file(file_path, result)
 
-
         result.endpoints = deduplicate_endpoints(result.endpoints)
 
         self.classifier.classify_all(result.endpoints)
@@ -73,12 +90,18 @@ class ProjectAnalyzer:
             if self.config.is_rule_enabled(f.rule_id)
         ]
 
-        ai_result           = process_findings(findings)
-        result.ai_suppressed = ai_result["suppressed"]
-        findings            = [f["_original"] for f in ai_result["kept"]]
+        ai_section = _load_ai_filter_section(path)
+        ai_config = AIFilterConfig.from_dict(ai_section)
 
-        result.findings  = findings
-        result.end_time  = datetime.now()
+        if ai_config.mode == "disabled":
+            result.findings = findings
+            result.ai_suppressed = []
+        else:
+            ai_result = process_findings(findings, config=ai_config)
+            result.findings = [f["_original"] for f in ai_result["kept"]]
+            result.ai_suppressed = ai_result["suppressed"]
+
+        result.end_time = datetime.now()
 
         return result
 
@@ -131,4 +154,4 @@ class ProjectAnalyzer:
                 result.frameworks_detected.add(discoverer.framework)
                 for endpoint in discoverer.discover(parsed, file_path):
                     result.endpoints.append(endpoint)
-                break  
+                break

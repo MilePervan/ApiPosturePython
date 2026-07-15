@@ -1,0 +1,58 @@
+{
+  "AP001": {
+    "name": "Public without explicit intent",
+    "severity": "High",
+    "description": "Endpoint is public but lacks an explicit marker (like AllowAny) showing this was intentional. The scanner cannot tell if it's public by design or by mistake.",
+    "check_for": "Explicit AllowAny permission, a public marker/decorator, or documentation showing the endpoint is intentionally public",
+    "false_positive_if": "Endpoint is genuinely meant to be public by design (home page, static content, public catalog/reference data, login/register pages, health checks). NOT a false positive if: the endpoint exposes user-specific data, performs sensitive actions, or being public was an oversight."
+  },
+  "AP002": {
+    "name": "Anonymous on write",
+    "severity": "High",
+    "description": "A write endpoint (POST/PUT/DELETE/PATCH) is explicitly marked AllowAny, permitting anonymous users to change state.",
+    "check_for": "Whether AllowAny is intentional, or if the write should require authentication",
+    "false_positive_if": "The write endpoint is genuinely meant to be anonymous by design (public registration, anonymous feedback form, public webhook receiver, login/token-check endpoints). NOT a false positive if: the write modifies protected resources, user data, or system state that should require login."
+  },
+  "AP003": {
+    "name": "Auth conflict",
+    "severity": "Medium",
+    "description": "A method-level AllowAny overrides the class-level authentication, creating an inconsistency where one method bypasses the auth the rest of the class enforces.",
+    "check_for": "Whether the method-level override is intentional and documented, or an accidental security gap",
+    "false_positive_if": "The override is intentional and the specific method is genuinely meant to be public (e.g. a public list on an otherwise protected viewset). NOT a false positive if: the override accidentally exposes a sensitive operation."
+  },
+  "AP004": {
+    "name": "Missing auth on writes",
+    "severity": "Critical",
+    "description": "A write endpoint (POST/PUT/DELETE/PATCH) has no authentication configuration at all - not even an explicit AllowAny. State-changing operations are unprotected.",
+    "check_for": "Any authentication: login_required, permission_classes, middleware auth, JWT validation on the write endpoint",
+    "false_positive_if": "Auth is genuinely applied at a parent level (blueprint, router, middleware) that the scanner did not see, or the write is intentionally public (rare). NOT a false positive if: the endpoint truly has no auth and modifies data - this is Critical for a reason. A route name containing the word public does NOT make a missing-auth write safe."
+  },
+  "AP005": {
+    "name": "Excessive roles",
+    "severity": "Low",
+    "description": "This is a DESIGN issue, NOT an authentication issue. The endpoint requires MORE THAN 3 ROLES, which may indicate overly complex or poorly designed authorization. The endpoint IS protected - the concern is only the NUMBER of roles, not whether auth exists.",
+    "check_for": "Count the roles. Are all of them genuinely needed and distinct, or are some redundant, duplicated, or leftovers? Do NOT evaluate whether the endpoint has authentication - it does. Only judge if the role COUNT is justified.",
+    "false_positive_if": "All listed roles are legitimate and serve genuinely distinct user types that each need access (e.g. admin, manager, analyst, viewer for a reports page where each role really views reports). NOT a false positive if: roles are duplicated, redundant, or the long list signals a design problem. IMPORTANT: do not answer based on authentication - this alarm is purely about whether having this many roles is justified."
+  },
+  "AP006": {
+    "name": "Weak role naming",
+    "severity": "Low",
+    "description": "This is a DESIGN/NAMING issue, NOT an authentication issue. One or more roles use generic names like user or admin that do not clearly describe the permission scope. The endpoint IS protected - the concern is only the role NAMING, not whether auth exists.",
+    "check_for": "Look at the role NAMES. Are they specific and descriptive of the actual permissions, or vague generic words? Do NOT evaluate whether the endpoint has authentication - it does. Only judge the clarity of the role names.",
+    "false_positive_if": "The generic name is an established, well-understood convention in this codebase (e.g. admin universally means full access here). NOT a false positive if: the vague naming genuinely causes confusion about what the role can access. IMPORTANT: do not answer based on authentication - this alarm is purely about role-name clarity."
+  },
+  "AP007": {
+    "name": "Sensitive keywords",
+    "severity": "Medium",
+    "description": "A public route contains sensitive keywords like admin, debug, or export, suggesting it may expose privileged functionality without protection.",
+    "check_for": "Whether the route with sensitive keywords actually has authentication despite being flagged public",
+    "false_positive_if": "The keyword appears coincidentally and the route is genuinely safe to be public (e.g. /admin-login which is the login page itself). NOT a false positive if: the route exposes admin/debug/export functionality without auth."
+  },
+  "AP008": {
+    "name": "Endpoint without auth",
+    "severity": "High",
+    "description": "Endpoint has no authentication configuration at all - the scanner found no auth markers, decorators, or permission classes.",
+    "check_for": "Any auth configuration: decorators, permission_classes, middleware, framework-level auth",
+    "false_positive_if": "The endpoint is public by design (home page, static content, public catalog/reference data, login pages), or auth is applied at a parent level (blueprint/router/middleware) the scanner did not detect. NOT a false positive if: the endpoint serves protected data or actions with genuinely no auth."
+  }
+}

@@ -322,5 +322,31 @@
       "alarm": "AP008"
     },
     "label": "FALSE_POSITIVE"
+  },
+  {
+    "route": "/dashboard",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "ADMIN",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/dashboard",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "ADMIN",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
   }
 ]
