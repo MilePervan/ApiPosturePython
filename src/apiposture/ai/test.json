@@ -1,0 +1,22 @@
+[
+  {"route": "/", "method": "GET", "alarm": "AP001", "truth": "FALSE", "comment": "Pocetna stranica - treba biti javna"},
+  {"route": "/", "method": "GET", "alarm": "AP008", "truth": "FALSE", "comment": "Pocetna stranica - nema osjetljivih podataka"},
+  {"route": "/lab", "method": "GET", "alarm": "AP001", "truth": "FALSE", "comment": "Lab stranica - javna po dizajnu"},
+  {"route": "/lab", "method": "GET", "alarm": "AP008", "truth": "FALSE", "comment": "Lab stranica - nema auth potrebe"},
+  {"route": "/dashboard", "method": "GET", "alarm": "AP001", "truth": "REAL", "comment": "Slaba sesija - base64 bez potpisa"},
+  {"route": "/dashboard", "method": "GET", "alarm": "AP008", "truth": "REAL", "comment": "Vraca podatke bez prave autentifikacije"},
+  {"route": "/serialize", "method": "POST", "alarm": "AP001", "truth": "REAL", "comment": "Opasna operacija bez auth"},
+  {"route": "/serialize", "method": "POST", "alarm": "AP004", "truth": "REAL", "comment": "Write bez autentifikacije"},
+  {"route": "/serialize", "method": "POST", "alarm": "AP008", "truth": "REAL", "comment": "Nema auth konfiguracije"},
+  {"route": "/deserialize", "method": "POST", "alarm": "AP001", "truth": "REAL", "comment": "pickle.loads - RCE ranjivost"},
+  {"route": "/deserialize", "method": "POST", "alarm": "AP004", "truth": "REAL", "comment": "Kriticna - RCE bez auth"},
+  {"route": "/deserialize", "method": "POST", "alarm": "AP008", "truth": "REAL", "comment": "Nema auth, pickle deserijalizacija"},
+  {"route": "/public/submit", "method": "POST", "alarm": "AP004", "truth": "REAL", "comment": "Write endpoint bez auth - kod kaze should have auth"},
+  {"route": "/public/submit", "method": "POST", "alarm": "AP008", "truth": "REAL", "comment": "Nema auth konfiguracije"},
+  {"route": "/admin/config", "method": "GET", "alarm": "AP001", "truth": "REAL", "comment": "Admin ruta javna"},
+  {"route": "/admin/config", "method": "GET", "alarm": "AP007", "truth": "REAL", "comment": "Osjetljiva rijec admin u javnoj ruti"},
+  {"route": "/admin/config", "method": "GET", "alarm": "AP008", "truth": "REAL", "comment": "Admin config bez auth"},
+  {"route": "/health", "method": "GET", "alarm": "AP001", "truth": "FALSE", "comment": "Health check - javni za monitoring"},
+  {"route": "/debug/info", "method": "GET", "alarm": "AP001", "truth": "FALSE", "comment": "Debug info u uzorku - javno po dizajnu"},
+  {"route": "/debug/info", "method": "GET", "alarm": "AP007", "truth": "REAL", "comment": "Debug izlaze osjetljive informacije"}
+]

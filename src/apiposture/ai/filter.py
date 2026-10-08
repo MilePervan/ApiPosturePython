@@ -178,10 +178,11 @@ def _parse_llm_verdict(answer: str) -> Optional[bool]:
 
 def llm_analyze(route: str, method: str, alarm: str, code: str,
                 model: str = "codellama") -> Tuple[Optional[bool], int]:
+    # 1. Provjera je li Python paket 'ollama' instaliran
     try:
         import ollama
     except ImportError:
-        print("pip install ollama")
+        print("  [LLM] Paket 'ollama' nije instaliran. Pokreni: pip install ollama")
         return None, 0
 
     try:
@@ -249,8 +250,23 @@ SOURCE CODE:
             print(f" LLM (unparsed): {answer[:150]}")
 
         return is_fp, confidence
+
     except Exception as e:
-        print(f" LLM error: {e}")
+        # Razlikujemo vrstu greske da korisnik zna sto popraviti.
+        msg = str(e).lower()
+        if any(x in msg for x in ["connection", "refused", "connect",
+                                  "max retries", "timed out", "timeout",
+                                  "11434"]):
+            # Ollama aplikacija (server) nije pokrenuta
+            print("  [LLM] Ollama aplikacija nije pokrenuta. "
+                  "Pokreni Ollama (provjeri: ollama list) pa ponovi.")
+        elif any(x in msg for x in ["not found", "no such model", "model"]):
+            # Model nije skinut
+            print(f"  [LLM] Model '{model}' nije dostupan. "
+                  f"Skini ga: ollama pull {model}")
+        else:
+            # Neka druga, nepredvidjena greska
+            print(f"  [LLM] Greska pri analizi: {e}")
         return None, 0
 
 def developer_review(finding: dict, llm_suggestion: Optional[bool],
