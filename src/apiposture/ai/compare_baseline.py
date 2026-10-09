@@ -147,13 +147,10 @@ def _print_comparison(r: dict) -> None:
 
 if __name__ == "__main__":
     print("""
-Ova skripta se pokrece iz koda.
 
-Primjer:
     from apiposture.ai.compare_baseline import compare_with_without_filter
 
     findings = scanner.scan(putanja)   # nalazi iz skenera
     compare_with_without_filter(findings, "test_set.json")
 
-Treba ti test_set.json s tocnim odgovorima za te projekte.
 """)

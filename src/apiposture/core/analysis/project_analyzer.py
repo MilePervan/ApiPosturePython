@@ -2,6 +2,7 @@ import yaml
 from datetime import datetime
 from pathlib import Path
 
+from apiposture.ai.pdf_report import generate_pdf_report
 from apiposture.core.analysis.source_loader import SourceLoader
 from apiposture.core.classification.classifier import SecurityClassifier
 from apiposture.core.configuration.loader import ApiPostureConfig
@@ -100,6 +101,8 @@ class ProjectAnalyzer:
             ai_result = process_findings(findings, config=ai_config)
             result.findings = [f["_original"] for f in ai_result["kept"]]
             result.ai_suppressed = ai_result["suppressed"]
+
+            generate_pdf_report(ai_result, scan_path=str(path)) 
 
         result.end_time = datetime.now()
 
