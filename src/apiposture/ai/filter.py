@@ -178,7 +178,7 @@ def _parse_llm_verdict(answer: str) -> Optional[bool]:
 
 def llm_analyze(route: str, method: str, alarm: str, code: str,
                 model: str = "codellama") -> Tuple[Optional[bool], int]:
-    # 1. Provjera je li Python paket 'ollama' instaliran
+    
     try:
         import ollama
     except ImportError:

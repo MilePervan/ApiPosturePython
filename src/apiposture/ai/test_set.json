@@ -1,0 +1,226 @@
+[
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "flask - home page javna"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "flask - home page bez osjetljivih podataka"
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP004",
+    "truth": "REAL",
+    "comment": "flask - write bez auth (kriticno)"
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "flask - nema auth konfiguracije"
+  },
+  {
+    "route": "/reports",
+    "method": "GET",
+    "alarm": "AP005",
+    "truth": "FALSE",
+    "comment": "flask - previse uloga (dizajn) (dizajn napomena, ne prava ranjivost)"
+  },
+  {
+    "route": "/reports",
+    "method": "GET",
+    "alarm": "AP006",
+    "truth": "FALSE",
+    "comment": "flask - genericko ime uloge (dizajn napomena, ne prava ranjivost)"
+  },
+  {
+    "route": "/data",
+    "method": "GET",
+    "alarm": "AP006",
+    "truth": "FALSE",
+    "comment": "flask - genericko ime user (dizajn napomena, ne prava ranjivost)"
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "REAL",
+    "comment": "flask - admin ruta javna"
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP007",
+    "truth": "REAL",
+    "comment": "flask - osjetljiva rijec admin"
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "flask - admin bez auth"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "fastapi - home page"
+  },
+  {
+    "route": "/",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "fastapi - home page"
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP004",
+    "truth": "REAL",
+    "comment": "fastapi - write bez auth"
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "fastapi - nema auth"
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "fastapi - debug javni u uzorku"
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP007",
+    "truth": "REAL",
+    "comment": "fastapi - debug izlaze osjetljive info"
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "fastapi - debug javni"
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "rest_auth - registracija javna"
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP004",
+    "truth": "REAL",
+    "comment": "rest_auth - write bez auth"
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "rest_auth - registracija po dizajnu"
+  },
+  {
+    "route": "/api/users/<int:id>",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "rest_auth - dohvat korisnika"
+  },
+  {
+    "route": "/api/users/<int:id>",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "rest_auth - javni podaci"
+  },
+  {
+    "route": "/lab",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "FALSE",
+    "comment": "pygoat - lab stranica javna"
+  },
+  {
+    "route": "/lab",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "FALSE",
+    "comment": "pygoat - lab stranica"
+  },
+  {
+    "route": "/dashboard",
+    "method": "GET",
+    "alarm": "AP001",
+    "truth": "REAL",
+    "comment": "pygoat - slaba sesija (base64)"
+  },
+  {
+    "route": "/dashboard",
+    "method": "GET",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "pygoat - nema prave auth"
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP001",
+    "truth": "REAL",
+    "comment": "pygoat - pickle bez auth"
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP004",
+    "truth": "REAL",
+    "comment": "pygoat - write bez auth"
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "pygoat - nema auth"
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP001",
+    "truth": "REAL",
+    "comment": "pygoat - pickle.loads RCE"
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP004",
+    "truth": "REAL",
+    "comment": "pygoat - RCE kriticno"
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP008",
+    "truth": "REAL",
+    "comment": "pygoat - pickle bez auth"
+  }
+]

@@ -56,15 +56,14 @@ def compare(apiposture_findings: list, test_set_path: str,
         print(f"TESTIRANJE MODELA: {model}")
         print(f"{'=' * 60}")
 
-        # Konfiguracija s ovim modelom, automatski mod (bez covjeka)
-        # i bez pravila, da mjerimo CIST ucinak LLM-a
+       
         config = AIFilterConfig(
             use_llm=True,
             llm_model=model,
             mode="automatic",
-            use_rules=False,            # iskljuceno da mjerimo samo LLM
+            use_rules=False,            
             auto_suppress_threshold=70,
-            protect_critical=False,     # iskljuceno da vidimo sirovu procjenu
+            protect_critical=False,     
         )
 
         # Mjeri vrijeme

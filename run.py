@@ -87,7 +87,7 @@ def pokreni_usporedbu(projekt_path):
     print(f"Skeniram {projekt_path}...")
     findings = dobij_sirove_nalaze(projekt_path)
 
-    modeli = ["qwen2.5-coder:7b", "codellama"]  # dodaj modele koje imas
+    modeli = ["qwen2.5-coder:7b", "deepseek-coder-v2:16b", "codellama", "llama3"]
     compare(findings, test_set, models=modeli)
 
 

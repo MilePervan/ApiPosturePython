@@ -348,5 +348,1864 @@
     },
     "label": "FALSE_POSITIVE",
     "confidence": 85
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP007",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP007"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/reports",
+    "method": "GET",
+    "alarm": "AP005",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP005"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/reports",
+    "method": "GET",
+    "alarm": "AP006",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP006"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/data",
+    "method": "GET",
+    "alarm": "AP006",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP006"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "ADMIN",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP007",
+    "features": {
+      "method": "GET",
+      "category": "ADMIN",
+      "changes_state": false,
+      "alarm": "AP007"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/admin/config",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "ADMIN",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 85
+  },
+  {
+    "route": "/public/submit",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/debug/info",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/api/users/<int:id>",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/api/users",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/api/users/<int:id>",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/home",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/home",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "STATIC_CONTENT",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/generator",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/download/<filename>",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/generator",
+    "method": "GET",
+    "alarm": "AP004",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/generator",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/download/<filename>",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/serialize",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/deserialize",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 90
+  },
+  {
+    "route": "/createapiview/",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/destroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP004",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PUT",
+    "alarm": "AP004",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PATCH",
+    "alarm": "AP004",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "DELETE",
+    "alarm": "AP004",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listcreateapiview/",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrievedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP004",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PUT",
+    "alarm": "AP004",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PATCH",
+    "alarm": "AP004",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PUT",
+    "alarm": "AP004",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PATCH",
+    "alarm": "AP004",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP004",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PUT",
+    "alarm": "AP004",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PATCH",
+    "alarm": "AP004",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/apirootview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/apirootview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/createapiview/",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/createapiview/",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/destroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP001",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/destroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP008",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemacomponentname/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemacomponentname/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemaduplicate1/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemaduplicate1/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemaduplicate2/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleautoschemaduplicate2/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericapiviewmodel/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericapiviewmodel/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/new/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/new/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/old/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplegenericviewset/old/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleoperationidduplicate1/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleoperationidduplicate1/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleoperationidduplicate2/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleoperationidduplicate2/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplevalidatedapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/examplevalidatedapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PUT",
+    "alarm": "AP001",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PUT",
+    "alarm": "AP008",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PATCH",
+    "alarm": "AP001",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "PATCH",
+    "alarm": "AP008",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "DELETE",
+    "alarm": "AP001",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/exampleviewset/{pk}/",
+    "method": "DELETE",
+    "alarm": "AP008",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listcreateapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listcreateapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listcreateapiview/",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/listcreateapiview/",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrievedestroyapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrievedestroyapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrievedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP001",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrievedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP008",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PUT",
+    "alarm": "AP001",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PUT",
+    "alarm": "AP008",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PATCH",
+    "alarm": "AP001",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdateapiview/",
+    "method": "PATCH",
+    "alarm": "AP008",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PUT",
+    "alarm": "AP001",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PUT",
+    "alarm": "AP008",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PATCH",
+    "alarm": "AP001",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "PATCH",
+    "alarm": "AP008",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP001",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/retrieveupdatedestroyapiview/",
+    "method": "DELETE",
+    "alarm": "AP008",
+    "features": {
+      "method": "DELETE",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/schemaview/",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/schemaview/",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PUT",
+    "alarm": "AP001",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PUT",
+    "alarm": "AP008",
+    "features": {
+      "method": "PUT",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PATCH",
+    "alarm": "AP001",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/updateapiview/",
+    "method": "PATCH",
+    "alarm": "AP008",
+    "features": {
+      "method": "PATCH",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/articles/<slug>/comments",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/articles/<slug>/comments",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/tags",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/tags",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/v1/scan",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/v1/scan",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/v1/scan",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/v1/scan/{job_id}/result",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/api/v1/scan/{job_id}/result",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/fetch/customer",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/search",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "SEARCH",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/xxe_uploader",
+    "method": "GET",
+    "alarm": "AP004",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/yaml_hammer",
+    "method": "POST",
+    "alarm": "AP004",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP004"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/fetch/customer",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/fetch/customer",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/get/<cust_id>",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/get/<cust_id>",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/search",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "SEARCH",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/search",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "SEARCH",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/xxe",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/xxe",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/xxe_uploader",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/xxe_uploader",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/yaml",
+    "method": "GET",
+    "alarm": "AP008",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP008"
+    },
+    "label": "FALSE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/yaml",
+    "method": "GET",
+    "alarm": "AP001",
+    "features": {
+      "method": "GET",
+      "category": "DATA_READ",
+      "changes_state": false,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/yaml_hammer",
+    "method": "POST",
+    "alarm": "AP001",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP001"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
+  },
+  {
+    "route": "/yaml_hammer",
+    "method": "POST",
+    "alarm": "AP008",
+    "features": {
+      "method": "POST",
+      "category": "WRITE",
+      "changes_state": true,
+      "alarm": "AP008"
+    },
+    "label": "TRUE_POSITIVE",
+    "confidence": 100
   }
 ]

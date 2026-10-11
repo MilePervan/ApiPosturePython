@@ -1,3 +1,4 @@
 {
-  "POST|AUTH|AP002": "reject"
+  "POST|AUTH|AP002": "reject",
+  "GET|DATA_READ|AP006": "reject"
 }
